@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+  --background-gray: #ededed;
+  --border-gray: #e0e0e0;
+  --large-font: 24px;
+  --med-font: 22px;
+  --small-font: 18px;
+  --xs-font: 8px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: var(--med-font);
+}
+
+header {
+  background: var(--background-gray);
+  border-bottom: 1px solid var(--border-gray);
+  overflow: auto;
+  padding-left: 16px;
+}
+
+nav ul, nav li {
+  display: inline-block;
+}
+
+nav ul {
+  margin: 16px 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+nav li {
+  font-size: var(--large-font);
+  padding-right: 24px;
+}
+
+nav li a {
+  color: purple;
+}
+
+h1, h2 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: var(--large-font);
+}
+
+h2 {
+  font-size: var(--small-font);
+  margin: 16px 0 8px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin-left: 110px;
+}
+
+input[type='search'], button {
+  border: 1px solid var(--border-gray);
+  border-radius: 4px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+input[type='search'] {
+  background: #fff;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: var(--med-font);
+  padding-left: 8px;
+  width: 450px;
+}
+
+button {
+  background: url('magnifying-glass.png'), #fff;
+  background-size: contain;
+  width: 40px;
+}
+
+.results {
+  margin-top: 47px;
+}
+
+.results-nav {
+  border: 1px solid var(--border-gray);
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.results-nav-item {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+
+.results-nav-item:first-child, .results-nav-item:last-child {
+  width: 80px;
+}
+
+.results-nav-item:first-child:hover, .results-nav-item:last-child:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.results-nav-item:nth-child(2) {
+  border-left: 1px solid var(--border-gray);
+  border-right: 1px solid var(--border-gray);
+  width: 180px;
+}
+
+.results-area {
+  margin-top: 60px;
+}
+
+.results-area-item {
+  margin: 16px 0;
+}
+
+.result-date, .result-location {
+  color: gray;
+}
+
+.result-location {
+  font-size: var(--small-font);
+}
+
+.result-title {
+  font-weight: 700;
+  margin: 0 16px;
+}
