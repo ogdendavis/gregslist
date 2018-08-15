@@ -143,3 +143,7 @@ button {
   font-weight: 700;
   margin: 0 16px;
 }
+
+.hidden {
+  display: none;
+}
